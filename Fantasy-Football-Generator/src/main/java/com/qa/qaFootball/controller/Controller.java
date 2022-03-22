@@ -49,7 +49,13 @@ public class Controller {
 	public ResponseEntity<String> deleteById(@PathVariable("id") long id) {
 		service.remove(id);
 		String response = "Player of id: " + id + "has been deleted";
-		return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
-		
+		return new ResponseEntity<>(response, HttpStatus.ACCEPTED);	
+	}
+	
+	@GetMapping("/getId/{id}")
+	public ResponseEntity<FootballObjects> getById(@PathVariable("id") long id){
+		FootballObjects result = service.getById(id);
+		ResponseEntity<FootballObjects> response = new ResponseEntity<>(result, HttpStatus.ACCEPTED);
+		return response;
 	}
 }
