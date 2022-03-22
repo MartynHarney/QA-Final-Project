@@ -13,13 +13,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.qa.qaFootball.model.FootballObjects;
+import com.qa.qaFootball.services.ServicesDB;
 
 @RestController
 public class Controller {
 	
-	private ServiceDB service;
+	private ServicesDB service;
 
-	public Controller(ServiceDB service) {
+	public Controller(ServicesDB service) {
 		super();
 		this.service = service;
 	}
