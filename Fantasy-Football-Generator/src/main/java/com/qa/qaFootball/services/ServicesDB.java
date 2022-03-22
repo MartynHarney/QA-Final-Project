@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.qa.qaFootball.model.FootballObjects;
+import com.qa.qaFootball.repo.Repo;
 
 @Service
 public class ServicesDB {
@@ -17,7 +18,7 @@ public class ServicesDB {
 	}
 	
 	public FootballObjects createPlayer(FootballObjects player) {
-		FootballObject savedObject = repo.save(player);
+		FootballObjects savedObject = repo.save(player);
 		return savedObject;
 	}
 	
@@ -41,5 +42,10 @@ public class ServicesDB {
 	public boolean remove(long id) {
 		repo.deleteById(id);
 		return true;
+	}
+
+	public FootballObjects getById(long id) {
+		return repo.findById(id).get();
+		
 	}
 }
