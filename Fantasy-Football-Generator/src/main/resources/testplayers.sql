@@ -7,5 +7,5 @@ age int NOT NULL,
 star_player boolean NOT NULL,
 PRIMARY KEY (id)
 );
-INSERT INTO `football_object` (`name`, `price`, `age`, `star_player`) VALUES ('player1', 1, 25, true);
-INSERT INTO `football_object` (`name`, `price`, `age`, `star_player`) VALUES ('player2', 3, 32, false);
+INSERT INTO `football_objects` (`name`, `price`, `age`, `star_player`) VALUES ('player1', 1, 25, true);
+INSERT INTO `football_objects` (`name`, `price`, `age`, `star_player`) VALUES ('player2', 3, 32, false);

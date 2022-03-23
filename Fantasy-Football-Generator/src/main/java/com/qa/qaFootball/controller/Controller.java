@@ -28,7 +28,7 @@ public class Controller {
 	@PostMapping("/createPlayer")
 	public ResponseEntity<String> createPlayer(@RequestBody FootballObjects player){
 		service.createPlayer(player);
-		ResponseEntity<String> response = new ResponseEntity<String>("Player created with: " + player.getId(), HttpStatus.CREATED);
+		ResponseEntity<String> response = new ResponseEntity<String>("Player created with ID: " + player.getId(), HttpStatus.CREATED);
 		return response;
 	}
 	
