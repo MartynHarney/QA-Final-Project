@@ -12,7 +12,10 @@ Possible improvements for future revisions of the project.
         - I would like to add functionality for making it so you can only have 5 players per team as well as implementing a budget system to work alongside the price object in my project. Finally if possible I'd like to make it so you can only have a max of 2 'star players' per team.
 
 Screenshots showing your postman requests and the output from the API.
-
+        - https://imgur.com/aVi0ke3
+        - https://imgur.com/TJ9TMjf
+        - https://imgur.com/PpGAKmJ
+        - https://imgur.com/Rfy2vUm
 
 Screenshots of your database to prove that data is being persisted.
 
