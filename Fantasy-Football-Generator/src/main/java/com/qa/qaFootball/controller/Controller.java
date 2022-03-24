@@ -45,10 +45,10 @@ public class Controller {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<String> deleteById(@PathVariable("id") long id) {
 		service.remove(id);
-		String response = "Player of id: " + id + "has been deleted";
+		String response = "Player of id: " + id + " has been deleted";
 		return new ResponseEntity<>(response, HttpStatus.ACCEPTED);	
 	}
 	

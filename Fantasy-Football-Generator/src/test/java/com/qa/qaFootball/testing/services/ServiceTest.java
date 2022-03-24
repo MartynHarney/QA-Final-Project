@@ -1,5 +1,9 @@
 package com.qa.qaFootball.testing.services;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Assertions;
@@ -50,6 +54,15 @@ public class ServiceTest {
 		Mockito.when(repo.save(player1Id)).thenReturn(newPlayer);
 		boolean result = service.update(1l, newPlayer);
 		Assertions.assertTrue(result);
+	}
+	
+	@Test
+	public void testGetAll() {
+		List<FootballObjects> readList = new ArrayList<>();
+		readList.add(player1);
+		Mockito.when(this.repo.findAll()).thenReturn(readList);
+		assertThat(this.service.getPlayers()).isEqualTo(readList);
+		Mockito.verify(this.repo, Mockito.times(1)).findAll();
 	}
 	
 }
