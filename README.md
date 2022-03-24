@@ -27,3 +27,6 @@ Screenshot of your test results, including coverage report.
 
 Link to Jira Board - You must add your trainer(s) as collaborators also.
         - https://martyn-qa.atlassian.net/jira/software/projects/QFP/boards/2
+        
+Risk Assesment
+        - https://imgur.com/mCFuQNa
