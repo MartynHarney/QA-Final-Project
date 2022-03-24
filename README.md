@@ -17,13 +17,9 @@ Screenshots showing your postman requests and the output from the API.
         - https://imgur.com/PpGAKmJ
         - https://imgur.com/Rfy2vUm
 
-Screenshots of your database to prove that data is being persisted.
-
-
 Screenshot of your test results, including coverage report.
         - https://imgur.com/ebiMOiG
         - https://imgur.com/T0Z06Xu
-
 
 Link to Jira Board - You must add your trainer(s) as collaborators also.
         - https://martyn-qa.atlassian.net/jira/software/projects/QFP/boards/2
